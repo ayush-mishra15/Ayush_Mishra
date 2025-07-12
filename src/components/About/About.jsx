@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactTypingEffect from 'react-typing-effect';
 import Tilt from 'react-parallax-tilt';
-import profileImage from '../../assets/profile2.png';
+import profileImage from '../../assets/profile2.jpg';
 
 const About = () => {
   return (
     <section
       id="about"
-      className="py-24 px-[7vw] lg:px-[15vw] bg-[#0b0b0b] text-white font-sans"
+      className="py-24 px-[9vw] lg:px-[15vw] bg-[#0b0b0b] text-white font-sans"
     >
-      <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-16 md:gap-x-24">
+      <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-16 md:gap-x-32">
         {/* Left Side: Content */}
         <div className="lg:w-1/2 text-center lg:text-left">
           <h1 className="text-4xl md:text-5xl font-bold mb-2">Hi, I'm</h1>
@@ -36,35 +36,30 @@ const About = () => {
           </p>
 
           <a
-            href="https://drive.google.com/file/d/1_pLl2wjYVCU-wnqXIhjhYr0YC0SJXvwv/view?usp=sharing"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block mt-8 px-8 py-3 text-white text-lg font-bold rounded-full bg-gradient-to-r from-[#8245ec] to-[#a855f7] shadow-md hover:shadow-lg transition-transform transform hover:scale-105"
+            className="inline-block mt-8 px-8 py-3 text-white text-lg font-semibold rounded-full bg-gradient-to-r from-[#8245ec] to-[#a855f7] shadow-md hover:shadow-lg transition-transform transform hover:scale-105"
           >
             DOWNLOAD CV
           </a>
         </div>
 
-        {/* Right Side: Image with Glow */}
-        <div className="lg:w-1/2 flex justify-center">
-          <Tilt
-            tiltMaxAngleX={5}
-            tiltMaxAngleY={5}
-            perspective={1200}
-            scale={1.03}
-            transitionSpeed={1000}
-            gyroscope={true}
-            className="rounded-full bg-gradient-to-br from-[#8245ec] to-[#a855f7] p-1 shadow-[0_0_40px_#8245ec80]"
-          >
-            <div className="bg-[#0b0b0b] rounded-full overflow-hidden w-64 h-64 sm:w-80 sm:h-80 md:w-[24rem] md:h-[24rem]">
-              <img
-                src=""
-                alt="Ayush Mishra"
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </Tilt>
-        </div>
+{/* Right Side: Image with Glow */}
+<div className="lg:w-1/2 flex justify-center">
+  <div
+    className="rounded-full bg-gradient-to-br from-[#8245ec] to-[#a855f7] p-1 shadow-[0_0_40px_#8245ec80] -mt-6 sm:-mt-10"
+  >
+    <div className="bg-[#0b0b0b] rounded-full overflow-hidden w-60 h-60 sm:w-80 sm:h-80 md:w-[23rem] md:h-[23rem]">
+      <img
+        src={profileImage}
+        alt="Ayush Mishra"
+        className="w-full h-full object-cover brightness-75"
+      />
+    </div>
+  </div>
+</div>
+
       </div>
     </section>
   );

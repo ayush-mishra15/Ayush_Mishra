@@ -12,8 +12,8 @@ const Education = () => {
         <h2 className="text-4xl font-bold text-white">EDUCATION</h2>
         <div className="w-32 h-1 bg-purple-500 mx-auto mt-4"></div>
         <p className="text-gray-400 mt-4 text-lg font-semibold">
-          My education has been a journey of learning and development. Here are
-          the details of my academic background.
+          My education has been a journey of learning and development.
+          The details of my current academic background.
         </p>
       </div>
 
@@ -22,12 +22,12 @@ const Education = () => {
         {education.map((edu) => (
           <div
             key={edu.id}
-            className="w-full mb-12 flex justify-center transition-transform duration-300 hover:scale-[1.025]"
+            className="w-full mb-12 flex justify-center"
           >
-            <div className="w-full sm:max-w-2xl bg-gray-900 border border-gray-500 shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] backdrop-blur-md p-6 sm:p-8 rounded-2xl">
-              <div className="flex items-center space-x-6">
-                {/* Circle Logo */}
-                <div className="w-16 h-16 bg-white rounded-md flex justify-end overflow-hidden">
+            <div className="w-full sm:max-w-2xl bg-gray-900 border border-gray-500 transition-transform duration-300 hover:scale-[1.025] hover:shadow-[0_5px_8px_rgba(168,85,247,0.5)] backdrop-blur-md p-6 sm:p-8 rounded-2xl">
+              <div className="flex items-center space-x-4 sm:space-x-6">
+                {/* ✅ Responsive, non-shrinking logo */}
+                <div className="w-14 h-14 sm:w-16 sm:h-16 bg-white rounded-md overflow-hidden flex-shrink-0">
                   <img
                     src={edu.img}
                     alt={edu.school}
@@ -36,7 +36,7 @@ const Education = () => {
                 </div>
 
                 <div className="flex flex-col justify-between">
-                  <h3 className="text-xl font-semibold text-white">
+                  <h3 className="text-lg sm:text-xl font-semibold text-white">
                     {edu.degree}
                   </h3>
                   <h4 className="text-sm text-gray-300">{edu.school}</h4>
@@ -44,7 +44,9 @@ const Education = () => {
                 </div>
               </div>
 
-              <p className="mt-4 text-gray-400 font-bold">Grade: {edu.grade}</p>
+              <p className="mt-4 text-gray-400 font-bold">
+                Grade: {edu.grade}
+              </p>
               <p className="mt-4 text-gray-400">{edu.desc}</p>
             </div>
           </div>

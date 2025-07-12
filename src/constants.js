@@ -34,6 +34,9 @@ import vercelLogo from './assets/tech_logo/vercel.png';
 // Experience Section Logo's
 import webverseLogo from './assets/company_logo/webverse_logo.png';
 import newtonschoolLogo from './assets/company_logo/newtonschool_logo.png';
+import frontend from './assets/company_logo/frontend.webp'
+import backend from './assets/company_logo/backend.webp'
+
 
 // Education Section Logo's
 import mitslogo from './assets/education_logo/mits_logo.jpeg';
@@ -99,15 +102,16 @@ export const SkillsInfo = [
 
     {
       id: 0,
-      img: newtonschoolLogo,
+      img: frontend,
       role: "Frontend Development",
       company: "Self Project-Based Learning",
-      date: "September 2021 – August 2022",
+      date: "2025 – Present",
       desc: "Built web pages using HTML, CSS, Javascript and other UI components. Practiced creating responsive layouts and improved understanding of frontend development fundamentals.",
       skills: [
         "HTML",
         "CSS",
         "JavaScript",
+        "React.js",
         "Bootstrap",
         "Material UI",
       ]
@@ -115,10 +119,10 @@ export const SkillsInfo = [
 
   {
       id: 1,
-      img: webverseLogo,
+      img: backend,
       role: "Backend Development",
       company: "Focuses on practical skills development",
-      date: "April 2024 – Present",
+      date: "2025 – Present",
       desc: "Practiced backend development using the MERN stack. Created REST APIs with Node.js and Express, connected MongoDB for data handling, and implemented basic authentication.",
       skills: [
         "Node.js",
@@ -127,8 +131,6 @@ export const SkillsInfo = [
         "JavaScript",
         "TypeScript",
         "REST API",
-        "Next.js",
-        "Tailwind CSS",
         "JWT Auth"
       ]
     },

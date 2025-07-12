@@ -12,14 +12,13 @@ const Experience = () => {
         <h2 className="text-4xl font-bold text-white">EXPERIENCE</h2>
         <div className="w-32 h-1 bg-purple-500 mx-auto mt-4"></div>
         <p className="text-gray-400 mt-4 text-lg font-semibold">
-          A collection of my work experience and the roles I have taken in
-          various organizations
+          A collection of my learning experience and skills I’ve acquired through hands-on practice
         </p>
       </div>
 
       {/* Experience Timeline */}
       <div className="relative">
-        {/* ✅ Vertical line only visible on sm and above */}
+        {/* Vertical Line */}
         <div className="hidden sm:block absolute sm:left-1/2 left-0 transform -translate-x-1/2 sm:-translate-x-0 w-1 bg-white h-full"></div>
 
         {/* Experience Entries */}
@@ -30,16 +29,16 @@ const Experience = () => {
               index % 2 === 0 ? "sm:justify-end" : "sm:justify-start"
             }`}
           >
-            {/* Content Section */}
+            {/* Content Box */}
             <div
               className={`w-full sm:max-w-md p-4 sm:p-8 rounded-2xl shadow-2xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] ${
                 index % 2 === 0 ? "sm:ml-0" : "sm:mr-0"
-              } sm:ml-44 sm:mr-44 ml-8 transform transition-transform duration-300 hover:scale-105`}
+              } sm:ml-44 sm:mr-44 ml-4 mr-4 transform transition-transform duration-300 hover:scale-105`}
             >
-              {/* Flex container for image and text */}
-              <div className="flex items-center space-x-6">
-                {/* Company Logo/Image */}
-                <div className="w-16 h-16 bg-white rounded-md overflow-hidden">
+              {/* Image + Text */}
+              <div className="flex items-center space-x-4 sm:space-x-6">
+                {/* ✅ Fixed: Company Logo */}
+                <div className="w-14 h-14 sm:w-16 sm:h-16 bg-white rounded-md overflow-hidden flex-shrink-0">
                   <img
                     src={experience.img}
                     alt={experience.company}
@@ -47,17 +46,17 @@ const Experience = () => {
                   />
                 </div>
 
-                {/* Role, Company Name, and Date */}
+                {/* Role, Company & Date */}
                 <div className="flex flex-col justify-between">
                   <div>
-                    <h3 className="text-xl sm:text-2xl font-semibold text-white">
+                    <h3 className="text-lg sm:text-xl font-semibold text-white">
                       {experience.role}
                     </h3>
-                    <h4 className="text-md sm:text-sm text-gray-300">
+                    <h4 className="text-sm sm:text-md text-gray-300">
                       {experience.company}
                     </h4>
                   </div>
-                  <p className="text-sm text-gray-500 mt-2">{experience.date}</p>
+                  <p className="text-sm text-gray-500 mt-1">{experience.date}</p>
                 </div>
               </div>
 
