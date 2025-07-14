@@ -36,7 +36,7 @@ const About = () => {
           </p>
 
           <a
-            href="#"
+            href="https://drive.google.com/file/d/1aIJy68auhkmen9mzGIuYbArTUfEUvGKL/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block mt-8 px-8 py-3 text-white text-lg font-semibold rounded-full bg-gradient-to-r from-[#8245ec] to-[#a855f7] shadow-md hover:shadow-lg transition-transform transform hover:scale-105"
