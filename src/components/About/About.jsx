@@ -54,7 +54,7 @@ const About = () => {
       <img
         src={profileImage}
         alt="Ayush Mishra"
-        className="w-full h-full object-cover brightness-75"
+        className="w-full h-full object-cover"
       />
     </div>
   </div>
