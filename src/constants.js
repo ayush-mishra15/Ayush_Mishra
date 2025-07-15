@@ -154,7 +154,7 @@ export const SkillsInfo = [
   export const projects = [
     {
       id: 0,
-      title: "Mystery Message",
+      title: "Mystery-Message",
       description:
        " Mystery Message is a sleek and modern platform that lets users send and receive anonymous messages, feedback, or confessions. Whether you're looking for honest opinions, emotional support, or a place to express your thoughts without judgment that gives you the space to be real.",
       image: mystery,
@@ -164,7 +164,7 @@ export const SkillsInfo = [
     },
     {
       id: 1,
-      title: "Job Portal",
+      title: "JobHub",
       description:
         "A full-stack job portal system built with the MERN stack, featuring user authentication, role-based access (student/recruiter), job application management where students can apply for jobs and recruiters can post them, resume handling, and a responsive interface for seamless interaction across devices.",   
      image: jobportal,
